@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
+    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
   },
   "projects": {
-    "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
+    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
         "packagesPath": "C:\\Users\\yared\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
+        "outputPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -18,3 +18,17 @@ C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcor
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcoreapp3.1\fixit.dll
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcoreapp3.1\fixit.pdb
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcoreapp3.1\fixit.genruntimeconfig.cache
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
