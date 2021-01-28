@@ -1,6 +1,5 @@
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\fixit.exe
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\fixit.deps.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\fixit.runtimeconfig.json
@@ -62,3 +61,4 @@ C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcor
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\obj\Debug\netcoreapp3.1\scopedcss\bundle\fixit.styles.css
