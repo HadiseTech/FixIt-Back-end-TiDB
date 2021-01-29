@@ -14,8 +14,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
-
+using AutoMapper;
 using fixit.Models;
+
 using fixit.Data;
 
 namespace fixit
@@ -33,7 +34,19 @@ namespace fixit
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddCors(option =>
+            {
+                option.AddPolicy("allowedOrigin",
+                    builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+                    );
+            });
             services.AddControllers();
+            services.AddScoped<IRepository<Service>, ServiceRepository>();
+         
+         
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
