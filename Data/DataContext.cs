@@ -14,6 +14,17 @@ namespace fixit.Data
         public DbSet<Job> Job { get; set; }
         public DbSet<Service> Service { get; set; }
         public DbSet<Technician> Technician { get; set; }
+
+    
+    
+
+
+    
+    
+    
+
+    
+            
     }
 }
 
