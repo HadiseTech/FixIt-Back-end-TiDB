@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -19,18 +20,25 @@ namespace Controllers
             _repo = repo;
             _mapper = mapper;
         }
-        
+
+
         [HttpGet("getAllServices")]
         public async Task<IActionResult> GetServices()
         {
-            var model = await _repo.GetData();
+            Console.WriteLine("This is the get All service method");
+
+              var model = await _repo.GetData();
+            // return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
             return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
+            // return Ok(model);
         }
 
         [HttpGet("getAllServiceById")]
         public async Task<IActionResult> GetServiceById(int id)
         {
-            
+
+            Console.WriteLine("This is the get all service by id method");
+
             var model = await _repo.GetDataById(id);
             return Ok(_mapper.Map<ServiceDto>(model));
         }
@@ -38,7 +46,7 @@ namespace Controllers
         [HttpPost("InsertService")]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
-            
+
             var service = _mapper.Map<Service>(serviceDto);
             await _repo.UpdateData(service);
             return Ok(serviceDto);
@@ -52,15 +60,15 @@ namespace Controllers
             return Ok(serviceDto);
 
         }
-     
-     
-     
-     
-     
-     
-     
 
-     
+
+
+
+
+
+
+
+
 
     }
 }
