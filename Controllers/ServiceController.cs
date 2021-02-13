@@ -22,7 +22,7 @@ namespace Controllers
         }
 
 
-        [HttpGet("getAllServices")]
+        [HttpGet]
         public async Task<IActionResult> GetServices()
         {
             Console.WriteLine("This is the get All service method");
@@ -33,7 +33,7 @@ namespace Controllers
             // return Ok(model);
         }
 
-        [HttpGet("getAllServiceById")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetServiceById(int id)
         {
 
@@ -43,7 +43,7 @@ namespace Controllers
             return Ok(_mapper.Map<ServiceDto>(model));
         }
 
-        [HttpPost("InsertService")]
+        [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
 
@@ -52,12 +52,15 @@ namespace Controllers
             return Ok(serviceDto);
         }
 
-        [HttpDelete("deleteService")]
-        public async Task<IActionResult> DeleteServices(ServiceDto serviceDto)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteServices(int id)
         {
-            var service = _mapper.Map<Service>(serviceDto);
+            var service = await _repo.GetDataById(id);
+            // var service = _mapper.Map<Service>(serviceDto);
             await _repo.DeleteData(service);
-            return Ok(serviceDto);
+            return Ok(_mapper.Map<ServiceDto>(service));
+
+            // return Ok(serviceDto);
 
         }
 
