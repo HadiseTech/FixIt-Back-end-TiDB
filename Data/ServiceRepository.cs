@@ -17,7 +17,7 @@ namespace fixit.Data
         public async Task<bool> DeleteData(Service service)
         {
             _context.Service.Remove(service);
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return true;
         }
 
