@@ -34,6 +34,7 @@ namespace fixit
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddCors(option =>
             {
@@ -42,8 +43,6 @@ namespace fixit
                     );
             });
             services.AddControllers();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
             services.AddScoped<IRepository<Service>, ServiceRepository>();
             services.AddScoped<IRepository<Job>, JobRepository>();
          

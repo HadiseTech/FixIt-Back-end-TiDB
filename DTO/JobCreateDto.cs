@@ -16,6 +16,10 @@ namespace fixit.DTO{
 
         public string DoneStatus { get; set; }
 
+        public User  User { get; set; }
+
+        public Technician Technician { get; set; }
+
     }
 
     

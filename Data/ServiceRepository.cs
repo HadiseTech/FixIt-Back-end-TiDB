@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using fixit.Models;
+using fixit.DTO;
 
 namespace fixit.Data
 {
@@ -35,6 +36,12 @@ namespace fixit.Data
         {
             return await _context.Service.FirstOrDefaultAsync(x => x.ServiceId == id);
         }
+
+        public Task<Service> PutJob(Service job)
+        {
+            throw new NotImplementedException();
+        }
+
         // Update and crete new service objects
         public async Task<Service> UpdateData(Service service)
         {

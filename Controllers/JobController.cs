@@ -5,6 +5,7 @@ using fixit.Data;
 using fixit.DTO;
 using fixit.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Controllers{
 
@@ -23,31 +24,19 @@ namespace Controllers{
          public async Task<IActionResult> GetJobs()
         {
             var model = await _jobRepository.GetData();
-            List<Job> jobs = new List<Job>();
-            var result = new List<JobDto>();
-            foreach( var s in model){
-                JobDto dto = new JobDto{
-                    JobId = s.JobId,
-                    JobName = s.JobName,
-                    Description = s.Description,
-                };
-                result.Add(dto);
-            };
-            // return Ok(_mapper.Map<IEnumerable<JobDto>>(model));
-            return Ok(result);
+            return Ok(_mapper.Map<IEnumerable<JobDto>>(model));
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetJobById(int id)
         {
-            
+            Console.WriteLine("Returning job of id"+id);
             var model = await _jobRepository.GetDataById(id);
             return Ok(_mapper.Map<JobDto>(model));
         }
-
         [HttpPost]
         public async Task<IActionResult> CreateJob(JobDto JobDto)
-        {
-            
+        { 
+            Console.WriteLine("Creating Job");
             var Job = _mapper.Map<Job>(JobDto);
             await _jobRepository.UpdateData(Job);
             return Ok(JobDto);
@@ -61,7 +50,11 @@ namespace Controllers{
             var Job = _mapper.Map<Job>(model);
             await _jobRepository.DeleteData(Job);
             return Ok(model);
-
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateJob(int id,Job job){
+         await   _jobRepository.PutJob(job);
+           return Ok(job);
         }
     }
 

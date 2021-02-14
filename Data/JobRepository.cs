@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using fixit.DTO;
 using fixit.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,7 +37,19 @@ namespace fixit.Data
              _context.Job.Add(job);
             await _context.SaveChangesAsync();
             return job;
+
         }
+       public async Task<Job> PutJob(Job job){
+           var newJob = _context.Job.FirstOrDefaultAsync(x => x.JobId == job.JobId);
+         _context.Entry(job).State = EntityState.Modified;
+         await _context.SaveChangesAsync();
+         return job;
+       }
+
+        // public async Task<Job> PutJob(JobDto job)
+        // {
+        //     throw new System.NotImplementedException();
+        // }
     }
     
 }
