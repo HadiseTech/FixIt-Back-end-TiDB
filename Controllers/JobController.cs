@@ -52,9 +52,11 @@ namespace Controllers{
             return Ok(model);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateJob(int id,Job job){
-         await   _jobRepository.PutJob(job);
-           return Ok(job);
+        public async Task<IActionResult> UpdateJob(int id,JobDto job){
+            Console.WriteLine(job.AccepteStatus);
+            var Job = _mapper.Map<Job>(job);
+            await _jobRepository.PutJob(Job);
+            return Ok(job);
         }
     }
 

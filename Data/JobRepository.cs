@@ -40,16 +40,10 @@ namespace fixit.Data
 
         }
        public async Task<Job> PutJob(Job job){
-           var newJob = _context.Job.FirstOrDefaultAsync(x => x.JobId == job.JobId);
-         _context.Entry(job).State = EntityState.Modified;
-         await _context.SaveChangesAsync();
-         return job;
+           _context.Update(job).Property(x=>x.JobId).IsModified = false;
+            await _context.SaveChangesAsync();
+            return job;
        }
-
-        // public async Task<Job> PutJob(JobDto job)
-        // {
-        //     throw new System.NotImplementedException();
-        // }
     }
     
 }

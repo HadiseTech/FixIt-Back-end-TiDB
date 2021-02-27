@@ -2,7 +2,7 @@ using fixit.Models;
 
 namespace fixit.DTO{
     public class JobDto{
-         public int JobId { get; set; }
+        public int JobId { get; set; }
 
         public string JobName { get; set; }
 
