@@ -22,7 +22,10 @@ namespace fixit.Data
 
         public async Task<System.Collections.Generic.List<Job>> GetData()
         {
-                var data = await  _context.Job.ToListAsync();
+                var data = await  _context.Job
+                 .Include(e => e.User)
+                 .Include(e => e.Technician)
+                 .ToListAsync();
                 return data;
         }
 
