@@ -79,6 +79,7 @@ namespace fixit
 
             services.AddScoped<IRepository<Service>, ServiceRepository>();
             services.AddScoped<IRepository<Job>, JobRepository>();
+            services.AddScoped<IRepository<User>, UserRepository>();
 
 
 

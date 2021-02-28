@@ -10,8 +10,8 @@ using fixit.Data;
 namespace fixit.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210129015236_MyFirstMigration")]
-    partial class MyFirstMigration
+    [Migration("20210228171032_InitialMigrations")]
+    partial class InitialMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,21 @@ namespace fixit.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Job");
+                });
+
+            modelBuilder.Entity("fixit.Models.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("RoleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Role");
                 });
 
             modelBuilder.Entity("fixit.Models.Service", b =>
@@ -142,13 +157,15 @@ namespace fixit.Migrations
                     b.Property<string>("Picture")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Role")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Sex")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("User");
                 });
@@ -169,6 +186,15 @@ namespace fixit.Migrations
                     b.HasOne("fixit.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("fixit.Models.User", b =>
+                {
+                    b.HasOne("fixit.Models.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

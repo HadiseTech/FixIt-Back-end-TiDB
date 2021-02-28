@@ -131,3 +131,9 @@ C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcor
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Backup\obj\fixit.csproj.nuget.dgspec.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Backup\obj\project.assets.json
 >>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\Debug\netcoreapp3.1\project.razor.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\fixit.csproj.nuget.dgspec.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\project.assets.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
