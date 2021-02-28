@@ -44,6 +44,7 @@ namespace fixit
             });
             services.AddControllers();
             services.AddScoped<IRepository<Service>, ServiceRepository>();
+            services.AddScoped<IRepository<Job>, JobRepository>();
          
          
             
@@ -60,6 +61,8 @@ namespace fixit
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

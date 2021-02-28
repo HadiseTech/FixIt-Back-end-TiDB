@@ -48,27 +48,9 @@ namespace Controllers
         {
 
             var service = _mapper.Map<Service>(serviceDto);
-            await _repo.InsertData(service);
-            return Ok(serviceDto);
-        }
-
-        [HttpPut]
-
-        public async Task<IActionResult> UpdateService(ServiceDto serviceDto)
-        {
-
-            if (serviceDto == null)
-            {
-                // no content
-                return NotFound();
-            }
-            var service = _mapper.Map<Service>(serviceDto);
             await _repo.UpdateData(service);
             return Ok(serviceDto);
-
-
         }
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServices(int id)
@@ -81,8 +63,6 @@ namespace Controllers
             // return Ok(serviceDto);
 
         }
-
-
 
 
 
