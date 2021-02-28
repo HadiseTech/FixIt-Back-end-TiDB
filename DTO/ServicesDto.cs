@@ -22,5 +22,7 @@ namespace fixit.DTO
         public int AdvancedPrice { get; set; }
 
 
+
+
     }
 }
