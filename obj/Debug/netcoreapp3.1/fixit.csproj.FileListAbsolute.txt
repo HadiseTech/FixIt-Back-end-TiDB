@@ -122,3 +122,45 @@ C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.RazorTargetAssemblyInfo.cache
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csprojAssemblyReference.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.AssemblyInfoInputs.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.AssemblyInfo.cs
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CoreCompileInputs.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.pdb
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.exe
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.deps.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.runtimeconfig.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.runtimeconfig.dev.json
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.pdb
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.RazorTargetAssemblyInfo.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\staticwebassets\fixit.StaticWebAssets.Manifest.cache
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\staticwebassets\fixit.StaticWebAssets.xml
+C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.genruntimeconfig.cache
