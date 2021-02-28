@@ -1,7 +1,6 @@
 using fixit.Models;
 
-namespace fixit.DTO
-{
+namespace fixit.DTO{
     public class JobCreateDto{
        public string JobName { get; set; }
 

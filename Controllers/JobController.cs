@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using fixit.Data;
-
+using fixit.DTO;
 using fixit.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
