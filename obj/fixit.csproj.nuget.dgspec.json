@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
+    "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
+    "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectUniqueName": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectPath": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
         "packagesPath": "C:\\Users\\yared\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
+        "outputPath": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

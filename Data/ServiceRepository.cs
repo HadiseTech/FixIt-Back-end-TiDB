@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -15,7 +16,8 @@ namespace fixit.Data
         }
         // Delete Service objects
         public async Task<bool> DeleteData(Service service)
-        {
+        {   
+           Console.WriteLine("Delete method invoked");
             _context.Service.Remove(service);
             _context.SaveChangesAsync();
             return true;
@@ -36,17 +38,46 @@ namespace fixit.Data
             return await _context.Service.FirstOrDefaultAsync(x => x.ServiceId == id);
         }
         // Update and crete new service objects
-        public async Task<Service> UpdateData(Service service)
-        {
+        public async Task<Service> InsertData(Service service)
+        {   
+
+            Console.WriteLine("Create data  method invoked");
             _context.Service.Add(service);
+
             await _context.SaveChangesAsync();
             return service;
         }
 
-      
-   
-   
-   
-   
+        public async Task<Service> UpdateData(Service service)
+        {   
+
+
+          
+          
+            Console.WriteLine("Update method  invoked");
+
+          
+
+          _context.Update(service).Property(x=>x.ServiceId).IsModified = false;
+            _context.SaveChanges();
+          
+          
+          
+          
+
+          
+
+          
+          
+
+          
+            
+            // _context.Service.Add(service);
+            // 
+            // _context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT Fixit_DB.Service ON;");
+            // await _context.SaveChangesAsync();
+            // _context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT Fixit_DB.Service OFF");
+            return service;
+        }
     }
 }

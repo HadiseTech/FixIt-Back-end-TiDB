@@ -7,9 +7,10 @@ namespace fixit.Data
     {
         Task<List<T>> GetData();
         Task<T> GetDataById(int id);
-        Task<T> UpdateData(T student);
-        Task<bool> DeleteData(T student);
-       
+        Task<T> InsertData(T service);
+        Task<T> UpdateData(T service);
+        Task<bool> DeleteData(T service);
+
 
 
     }

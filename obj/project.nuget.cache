@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FhE40l2444K/4ZYi/oNn75Ny1RJ6FFr1R+HVnj6pLvkU8OX0YDX4sEpYPY0HELT5SQ9gyQ/y4QpoPBTlQf8XHw==",
+  "dgSpecHash": "J0zxlfpFDhq8shJRAKsR7a6jWSj0UedGhvC0NWo69HHxS9phVV7lwnrmpDAOtzpuOxTs2A3xFStPBOf62OK9QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+  "projectFilePath": "c:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yared\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\yared\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
