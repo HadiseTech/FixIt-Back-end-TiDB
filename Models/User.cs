@@ -32,10 +32,6 @@ namespace fixit.Models
 
 
 
-
-
-
-
     }
 
 }

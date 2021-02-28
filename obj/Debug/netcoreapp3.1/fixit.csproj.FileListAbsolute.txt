@@ -122,3 +122,4 @@ C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.RazorTargetAssemblyInfo.cache
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\templates\ff.config.json
