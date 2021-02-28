@@ -14,7 +14,7 @@ namespace fixit.Profiles
             .ForMember(dest => dest.Location , opt => opt.MapFrom(src => src.Location ))
             .ForMember(dest => dest.TechnicianId  , opt => opt.MapFrom(src => src.TechnicianId ))
             .ForMember(dest => dest.AccepteStatus  , opt => opt.MapFrom(src => src.AccepteStatus ))
-            .ForMember(dest => dest.DoneStatus   , opt => opt.MapFrom(src => src.AccepteStatus ))
+            .ForMember(dest => dest.DoneStatus   , opt => opt.MapFrom(src => src.DoneStatus ))
             .ForMember(dest => dest.User   , opt => opt.MapFrom(src => src.User ))
             .ForMember(dest => dest.Technician  , opt => opt.MapFrom(src => src.Technician));
            CreateMap<JobDto, fixit.Models.Job>();
