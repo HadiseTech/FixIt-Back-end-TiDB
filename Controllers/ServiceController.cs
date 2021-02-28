@@ -6,9 +6,12 @@ using fixit.Data;
 using fixit.DTO;
 using Microsoft.AspNetCore.Mvc;
 using fixit.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Controllers
 {
+
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ServiceController : ControllerBase
@@ -22,12 +25,13 @@ namespace Controllers
         }
 
 
+
         [HttpGet]
         public async Task<IActionResult> GetServices()
         {
             Console.WriteLine("This is the get All service method");
 
-              var model = await _repo.GetData();
+            var model = await _repo.GetData();
             // return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
             return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
             // return Ok(model);
@@ -42,7 +46,7 @@ namespace Controllers
             var model = await _repo.GetDataById(id);
             return Ok(_mapper.Map<ServiceDto>(model));
         }
-
+        [Authorize(Roles = Role.Admin)]
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
@@ -51,7 +55,7 @@ namespace Controllers
             await _repo.UpdateData(service);
             return Ok(serviceDto);
         }
-
+        [Authorize(Roles = Role.Admin)]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServices(int id)
         {
