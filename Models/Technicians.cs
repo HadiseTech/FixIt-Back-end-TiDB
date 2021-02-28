@@ -7,6 +7,7 @@ namespace fixit.Models
     {
 
 
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int TechnicianId { get; set; }
@@ -22,6 +23,12 @@ namespace fixit.Models
         public User User { get; set; }
 
 
+
+
+
+
+
+        
 
 
 
