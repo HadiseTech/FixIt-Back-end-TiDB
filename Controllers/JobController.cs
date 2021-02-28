@@ -7,7 +7,8 @@ using fixit.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace Controllers{
+namespace Controllers
+{
 
     [Route("api/jobs")]
     [ApiController]
@@ -21,7 +22,7 @@ namespace Controllers{
             _mapper = mapper;
         }
         [HttpGet]
-         public async Task<IActionResult> GetJobs()
+        public async Task<IActionResult> GetJobs()
         {
             var model = await _jobRepository.GetData();
             return Ok(_mapper.Map<IEnumerable<JobDto>>(model));
@@ -29,19 +30,19 @@ namespace Controllers{
         [HttpGet("{id}")]
         public async Task<IActionResult> GetJobById(int id)
         {
-            Console.WriteLine("Returning job of id"+id);
+            Console.WriteLine("Returning job of id" + id);
             var model = await _jobRepository.GetDataById(id);
             return Ok(_mapper.Map<JobDto>(model));
         }
         [HttpPost]
         public async Task<IActionResult> CreateJob(JobDto JobDto)
-        { 
+        {
             Console.WriteLine("Creating Job");
             var Job = _mapper.Map<Job>(JobDto);
             await _jobRepository.UpdateData(Job);
             return Ok(JobDto);
         }
- 
+
         [HttpDelete("{id}")]
 
         public async Task<IActionResult> DeleteJobs(int id)
@@ -52,10 +53,11 @@ namespace Controllers{
             return Ok(model);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateJob(int id,JobDto job){
+        public async Task<IActionResult> UpdateJob(int id, JobDto job)
+        {
             Console.WriteLine(job.AccepteStatus);
             var Job = _mapper.Map<Job>(job);
-            await _jobRepository.PutJob(Job);
+            await _jobRepository.UpdateData(Job);
             return Ok(job);
         }
     }

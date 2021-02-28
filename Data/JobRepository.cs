@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using fixit.DTO;
+
 using fixit.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,11 +22,11 @@ namespace fixit.Data
 
         public async Task<System.Collections.Generic.List<Job>> GetData()
         {
-                var data = await  _context.Job
-                 .Include(e => e.User)
-                 .Include(e => e.Technician)
-                 .ToListAsync();
-                return data;
+            var data = await _context.Job
+             .Include(e => e.User)
+             .Include(e => e.Technician)
+             .ToListAsync();
+            return data;
         }
 
         public async Task<Job> GetDataById(int id)
@@ -35,18 +35,19 @@ namespace fixit.Data
 
         }
 
-        public async  Task<Job> UpdateData(Job job)
+        public async Task<Job> InsertData(Job job)
         {
-             _context.Job.Add(job);
+            _context.Job.Add(job);
             await _context.SaveChangesAsync();
             return job;
 
         }
-       public async Task<Job> PutJob(Job job){
-           _context.Update(job).Property(x=>x.JobId).IsModified = false;
+        public async Task<Job> UpdateData(Job job)
+        {
+            _context.Update(job).Property(x => x.JobId).IsModified = false;
             await _context.SaveChangesAsync();
             return job;
-       }
+        }
     }
-    
+
 }
