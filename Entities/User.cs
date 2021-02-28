@@ -4,9 +4,9 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace fixit.Models
+namespace fixit.Entities
 {
-    public class User
+    public class UserEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -28,7 +28,7 @@ namespace fixit.Models
 
         public DateTime Dob { get; set; }
 
-        public int RoleId { get; set; }
+        public int  RoleId { get; set; }
 
         public Role Role { get; set; }
 

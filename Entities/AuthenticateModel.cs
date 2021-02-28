@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace fixit.Models
+namespace fixit.Entities
 {
     public class AuthenticateModel
     {

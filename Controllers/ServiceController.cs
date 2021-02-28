@@ -6,6 +6,7 @@ using fixit.Data;
 using fixit.DTO;
 using Microsoft.AspNetCore.Mvc;
 using fixit.Models;
+using fixit.Entities;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Controllers
@@ -46,7 +47,7 @@ namespace Controllers
             var model = await _repo.GetDataById(id);
             return Ok(_mapper.Map<ServiceDto>(model));
         }
-        [Authorize(Roles = Role.Admin)]
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
@@ -55,7 +56,7 @@ namespace Controllers
             await _repo.UpdateData(service);
             return Ok(serviceDto);
         }
-        [Authorize(Roles = Role.Admin)]
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServices(int id)
         {

@@ -6,25 +6,25 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using fixit.Models;
+using fixit.Entities;
 using fixit.Helpers;
 
 namespace fixit.Servicee
 {
     public interface IUserService
     {
-        User Authenticate(string username, string password);
-        IEnumerable<User> GetAll();
-        User GetById(int id);
+        UserEntity Authenticate(string username, string password);
+        IEnumerable<UserEntity> GetAll();
+        UserEntity GetById(int id);
     }
 
     public class UserService : IUserService
     {
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
-        private List<User> _users = new List<User>
+        private List<UserEntity> _users = new List<UserEntity>
         {
-            new User { UserId = 1, FullName = "Admin", Email = "admin", Password = "admin", Role = Role.Admin },
-             new User { UserId = 2, FullName = "Normal", Email = "User", Password = "user", Role = Role.User },
+            new UserEntity { UserId = 1, FullName = "Admin", Email = "admin", Password = "admin", Role = RoleEntity.Admin },
+             new UserEntity { UserId = 2, FullName = "Normal", Email = "User", Password = "user", Role = RoleEntity.User },
 
 
         };
@@ -36,7 +36,7 @@ namespace fixit.Servicee
             _appSettings = appSettings.Value;
         }
 
-        public User Authenticate(string username, string password)
+        public UserEntity Authenticate(string username, string password)
         {
             var user = _users.SingleOrDefault(x => x.Email == username && x.Password == password);
 
@@ -63,12 +63,12 @@ namespace fixit.Servicee
             return user;
         }
 
-        public IEnumerable<User> GetAll()
+        public IEnumerable<UserEntity> GetAll()
         {
             return _users;
         }
 
-        public User GetById(int id)
+        public UserEntity GetById(int id)
         {
             var user = _users.FirstOrDefault(x => x.UserId == id);
             return user;

@@ -1,8 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace fixit.Models
 {
-    public static class Role
+    public class Role
     {
-        public const string Admin = "Admin";
-        public const string User = "User";
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int RoleId { get; set; }
+        public string RoleName { get; set; }
     }
 }

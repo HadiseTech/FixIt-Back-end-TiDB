@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 
 using fixit.Models;
 using fixit.Servicee;
+using fixit.Entities;
 
 namespace fixit.Controllers
 {
@@ -30,7 +31,7 @@ namespace fixit.Controllers
             return Ok(user);
         }
 
-        [Authorize(Roles = Role.Admin)]
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -43,7 +44,7 @@ namespace fixit.Controllers
         {
             // only allow admins to access other user records
             var currentUserId = int.Parse(User.Identity.Name);
-            if (id != currentUserId && !User.IsInRole(Role.Admin))
+            if (id != currentUserId && !User.IsInRole(RoleEntity.Admin))
                 return Forbid();
 
             var user = _userService.GetById(id);
