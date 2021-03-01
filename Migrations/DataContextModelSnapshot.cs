@@ -56,6 +56,21 @@ namespace fixit.Migrations
                     b.ToTable("Job");
                 });
 
+            modelBuilder.Entity("fixit.Models.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("RoleName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("Role");
+                });
+
             modelBuilder.Entity("fixit.Models.Service", b =>
                 {
                     b.Property<int>("ServiceId")
@@ -140,13 +155,20 @@ namespace fixit.Migrations
                     b.Property<string>("Picture")
                         .HasColumnType("text");
 
+<<<<<<< HEAD
                     b.Property<string>("Role")
                         .HasColumnType("text");
+=======
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
 
                     b.Property<string>("Sex")
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("User");
                 });
@@ -175,6 +197,15 @@ namespace fixit.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("fixit.Models.User", b =>
+                {
+                    b.HasOne("fixit.Models.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

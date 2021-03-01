@@ -1,16 +1,8 @@
+using fixit.Models;
 
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace fixit.Models
-{
-    public class User
-    {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
+namespace fixit.DTO{
+    public class UserDto{
+         public int UserId { get; set; }
 
         public string FullName { get; set; }
 
@@ -26,14 +18,13 @@ namespace fixit.Models
 
         public string Sex { get; set; }
 
-        public DateTime Dob { get; set; }
+        public System.DateTime Dob { get; set; }
 
         public int RoleId { get; set; }
 
         public Role Role { get; set; }
 
-
-
     }
 
+    
 }

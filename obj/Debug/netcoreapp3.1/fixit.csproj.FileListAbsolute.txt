@@ -123,6 +123,7 @@ C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.RazorTargetAssemblyInfo.cache
 C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csprojAssemblyReference.cache
 C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.AssemblyInfoInputs.cache
 C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.AssemblyInfo.cs
@@ -166,9 +167,21 @@ C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\s
 C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\staticwebassets\fixit.StaticWebAssets.xml
 C:\Users\getac\Desktop\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.genruntimeconfig.cache
 =======
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\templates\ff.config.json
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
+=======
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\templates\ff.config.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Backup\obj\Debug\netcoreapp3.1\project.razor.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Backup\obj\fixit.csproj.nuget.dgspec.json
 C:\Users\yared\Documents\education\Flutter Project Fix it\fixit\bin\Debug\netcoreapp3.1\Backup\obj\project.assets.json
 >>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+<<<<<<< HEAD
+=======
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\Debug\netcoreapp3.1\project.razor.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\fixit.csproj.nuget.dgspec.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\project.assets.json
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Fasikaw\OneDrive\Documents\Flutter Projects\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c

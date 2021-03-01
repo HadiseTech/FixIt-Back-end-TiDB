@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
   },
   "projects": {
@@ -18,20 +19,27 @@
           "C:\\Users\\getac\\AppData\\Roaming\\NuGet\\NuGet.Config"
 =======
     "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
+=======
+    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
   },
   "projects": {
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {
+    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
+        "projectUniqueName": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj",
-        "packagesPath": "C:\\Users\\yared\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\obj\\",
+        "projectPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "packagesPath": "C:\\Users\\Fasikaw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+=======
+          "C:\\Users\\Fasikaw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,7 +49,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -53,7 +60,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -95,10 +101,14 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
 >>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
         }
       }
     }

@@ -22,10 +22,16 @@
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "applicationUrl": "https://localhost:3001;http://localhost:3000",
 =======
       "applicationUrl": "http://192.168.187.1:3000",
 >>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
+=======
+
+      "applicationUrl": "http://localhost:5001",
+
+>>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
