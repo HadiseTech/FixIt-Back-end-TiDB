@@ -1,14 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace fixit.Migrations
 {
-<<<<<<< HEAD:Migrations/20210214224055_Initialization.cs
-    public partial class Initialization : Migration
-=======
-    public partial class InitialMigrations : Migration
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c:Migrations/20210228171032_InitialMigrations.cs
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -29,14 +24,14 @@ namespace fixit.Migrations
                 name: "Service",
                 columns: table => new
                 {
-                    ServiceId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ServiceName = table.Column<string>(type: "text", nullable: true),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    Category = table.Column<string>(type: "text", nullable: true),
-                    InitialPrice = table.Column<int>(type: "integer", nullable: false),
-                    IntermediatePrice = table.Column<int>(type: "integer", nullable: false),
-                    AdvancedPrice = table.Column<int>(type: "integer", nullable: false)
+                    ServiceId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ServiceName = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    Category = table.Column<string>(nullable: true),
+                    InitialPrice = table.Column<int>(nullable: false),
+                    IntermediatePrice = table.Column<int>(nullable: false),
+                    AdvancedPrice = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -47,19 +42,6 @@ namespace fixit.Migrations
                 name: "User",
                 columns: table => new
                 {
-<<<<<<< HEAD:Migrations/20210214224055_Initialization.cs
-                    UserId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    FullName = table.Column<string>(type: "text", nullable: true),
-                    Email = table.Column<string>(type: "text", nullable: true),
-                    Password = table.Column<string>(type: "text", nullable: true),
-                    Phone = table.Column<string>(type: "text", nullable: true),
-                    Address = table.Column<string>(type: "text", nullable: true),
-                    Picture = table.Column<string>(type: "text", nullable: true),
-                    Sex = table.Column<string>(type: "text", nullable: true),
-                    Dob = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    Role = table.Column<string>(type: "text", nullable: true)
-=======
                     UserId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FullName = table.Column<string>(nullable: true),
@@ -71,7 +53,6 @@ namespace fixit.Migrations
                     Sex = table.Column<string>(nullable: true),
                     Dob = table.Column<DateTime>(nullable: false),
                     RoleId = table.Column<int>(nullable: false)
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c:Migrations/20210228171032_InitialMigrations.cs
                 },
                 constraints: table =>
                 {
@@ -88,12 +69,12 @@ namespace fixit.Migrations
                 name: "Technician",
                 columns: table => new
                 {
-                    TechnicianId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    UserId = table.Column<int>(type: "integer", nullable: false),
-                    Experiance = table.Column<string>(type: "text", nullable: true),
-                    CompletedWork = table.Column<int>(type: "integer", nullable: false),
-                    Department = table.Column<string>(type: "text", nullable: true)
+                    TechnicianId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(nullable: false),
+                    Experiance = table.Column<string>(nullable: true),
+                    CompletedWork = table.Column<int>(nullable: false),
+                    Department = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -110,15 +91,15 @@ namespace fixit.Migrations
                 name: "Job",
                 columns: table => new
                 {
-                    JobId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    JobName = table.Column<string>(type: "text", nullable: true),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<int>(type: "integer", nullable: true),
-                    Location = table.Column<string>(type: "text", nullable: true),
-                    TechnicianId = table.Column<int>(type: "integer", nullable: true),
-                    AccepteStatus = table.Column<string>(type: "text", nullable: true),
-                    DoneStatus = table.Column<string>(type: "text", nullable: true)
+                    JobId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    JobName = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
+                    UserId = table.Column<int>(nullable: true),
+                    Location = table.Column<string>(nullable: true),
+                    TechnicianId = table.Column<int>(nullable: true),
+                    AccepteStatus = table.Column<string>(nullable: true),
+                    DoneStatus = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

@@ -1,45 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
+    "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
   },
   "projects": {
-    "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
+    "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "projectUniqueName": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
-        "packagesPath": "C:\\Users\\getac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\getac\\Desktop\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\getac\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\yared\\Documents\\education\\Flutter Project Fix it\\fixit\\fixit.csproj": {}
-=======
-    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
-  },
-  "projects": {
-    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
-        "projectName": "fixit",
-        "projectPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "projectPath": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "packagesPath": "C:\\Users\\Fasikaw\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Flutter Projects\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
+        "outputPath": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
-=======
           "C:\\Users\\Fasikaw\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,21 +40,29 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "Harmony.Infrastructure.netcoreapp3.1": {
+              "target": "Package",
+              "version": "(, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[2.1.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.8, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.8, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[3.1.8, )"
             }
           },
           "imports": [
@@ -100,15 +83,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
->>>>>>> f54bcca6daae5dddb4ac7b98e8807314394fab52
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
         }
       }
     }

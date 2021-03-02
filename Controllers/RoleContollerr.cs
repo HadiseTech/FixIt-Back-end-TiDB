@@ -12,14 +12,14 @@ using Microsoft.AspNetCore.Authorization;
 namespace Controllers
 {
 
-    [Authorize]
+    // [Authorize]
     [ApiController]
-    [Route("[controller]")]
-    public class ServiceController : ControllerBase
+    [Route("api/roles")]
+    public class RoleController : ControllerBase
     {
         private readonly IRepository<Role> _repo;
         private readonly IMapper _mapper;
-        public ServiceController(IRepository<Role> repo, IMapper mapper)
+        public RoleController(IRepository<Role> repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
@@ -27,44 +27,53 @@ namespace Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetServices()
+        public async Task<IActionResult> GetRoles()
         {
             Console.WriteLine("This is the get All role method");
 
             var model = await _repo.GetData();
-            // return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
-            return Ok(_mapper.Map<IEnumerable<ServiceDto>>(model));
+            // return Ok(_mapper.Map<IEnumerable<RoleDto>>(model));
+            return Ok(_mapper.Map<IEnumerable<RoleDto>>(model));
             // return Ok(model);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetServiceById(int id)
+        public async Task<IActionResult> GetRoleById(int id)
         {
 
             Console.WriteLine("This is the get all role by id method");
 
             var model = await _repo.GetDataById(id);
-            return Ok(_mapper.Map<ServiceDto>(model));
+            return Ok(_mapper.Map<RoleDto>(model));
         }
-        [Authorize(Roles = RoleEntity.Admin)]
+        // [Authorize(Roles = RoleEntity.Admin)]
         [HttpPost]
-        public async Task<IActionResult> CreateService(ServiceDto serviceDto)
+        public async Task<IActionResult> CreateRole(RoleDto serviceDto)
         {
 
             var role = _mapper.Map<Role>(serviceDto);
             await _repo.UpdateData(role);
             return Ok(serviceDto);
         }
-        [Authorize(Roles = RoleEntity.Admin)]
+
+        // [Authorize(Roles = RoleEntity.Admin)]
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteServices(int id)
+        public async Task<IActionResult> DeleteRoles(int id)
         {
             var role = await _repo.GetDataById(id);
             // var role = _mapper.Map<Role>(serviceDto);
             await _repo.DeleteData(role);
-            return Ok(_mapper.Map<ServiceDto>(role));
+            return Ok(_mapper.Map<RoleDto>(role));
 
             // return Ok(serviceDto);
+
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutRoles(int id,RoleDto role)
+        {
+           var roleModel = _mapper.Map<Role>(role);
+            await _repo.UpdateData(roleModel);
+            return Ok(roleModel);
 
         }
 

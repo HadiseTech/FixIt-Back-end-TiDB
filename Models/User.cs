@@ -32,7 +32,7 @@ namespace fixit.Models
 
         public Role Role { get; set; }
 
-
+    
 
     }
 

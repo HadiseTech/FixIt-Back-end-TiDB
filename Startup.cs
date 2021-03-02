@@ -1,27 +1,18 @@
 using System;
-using System.Collections.Generic;
 using AutoMapper;
 using fixit.Data;
 using fixit.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Cors;
-using AutoMapper;
-using fixit.Models;
-
-using fixit.Data;
 using fixit.Helpers;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using fixit.Servicee;
+
 // using fixit.Service;
 
 namespace fixit
@@ -38,7 +29,7 @@ namespace fixit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("fixItConnection")));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddCors(option =>
@@ -74,15 +65,12 @@ namespace fixit
             });
 
             // configure DI for application services
-            services.AddScoped<IUserService, UserService>();
+            // services.AddScoped<IUserService, UserService>();
 
             services.AddScoped<IRepository<Service>, ServiceRepository>();
             services.AddScoped<IRepository<Job>, JobRepository>();
-<<<<<<< HEAD
             services.AddScoped<IRepository<Role>, RoleRepository>();
-=======
             services.AddScoped<IRepository<User>, UserRepository>();
->>>>>>> a5dcc59c761eec92e1c3bdea024214483a6a497c
 
 
 

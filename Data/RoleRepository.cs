@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace fixit.Data
 {
-    public class JobRepository : IRepository<Role>
+    public class RoleRepository : IRepository<Role>
     {
         private readonly DataContext _context;
-        public JobRepository(DataContext context)
+        public RoleRepository(DataContext context)
         {
             _context = context;
         }
@@ -23,15 +23,13 @@ namespace fixit.Data
         public async Task<System.Collections.Generic.List<Role>> GetData()
         {
             var data = await _context.Role
-             .Include(e => e.User)
-             .Include(e => e.Technician)
              .ToListAsync();
             return data;
         }
 
         public async Task<Role> GetDataById(int id)
         {
-            return await _context.Role.FirstOrDefaultAsync(x => x.JobId == id);
+            return await _context.Role.FirstOrDefaultAsync(x => x.RoleId == id);
 
         }
 
@@ -44,7 +42,7 @@ namespace fixit.Data
         }
         public async Task<Role> UpdateData(Role role)
         {
-            _context.Update(role).Property(x => x.JobId).IsModified = false;
+            _context.Update(role).Property(x => x.RoleId).IsModified = false;
             await _context.SaveChangesAsync();
             return role;
         }
