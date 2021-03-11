@@ -6485,7 +6485,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
-      "Harmony.Infrastructure.netcoreapp3.1",
+      "Harmony.Infrastructure.netcoreapp3.1 >= *",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.1.2",
       "Microsoft.EntityFrameworkCore >= 3.1.12",
       "Microsoft.EntityFrameworkCore.Analyzers >= 3.1.12",
@@ -6495,19 +6495,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fasikaw\\.nuget\\packages\\": {}
+    "C:\\Users\\yared\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+      "projectUniqueName": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
       "projectName": "fixit",
-      "projectPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
-      "packagesPath": "C:\\Users\\Fasikaw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
+      "projectPath": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+      "packagesPath": "C:\\Users\\yared\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fasikaw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\yared\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6517,6 +6517,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -6528,6 +6529,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -6535,7 +6537,7 @@
           },
           "Harmony.Infrastructure.netcoreapp3.1": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[*, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -6580,11 +6582,17 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
