@@ -6,10 +6,13 @@ using fixit.DTO;
 using fixit.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using Microsoft.AspNetCore.Authorization;
+using fixit.Entities;
 
 namespace Controllers
 {
 
+    [Authorize]
     [Route("api/jobs")]
     [ApiController]
     public class JobController : ControllerBase
@@ -42,7 +45,7 @@ namespace Controllers
             await _jobRepository.UpdateData(Job);
             return Ok(JobDto);
         }
-
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpDelete("{id}")]
 
         public async Task<IActionResult> DeleteJobs(int id)

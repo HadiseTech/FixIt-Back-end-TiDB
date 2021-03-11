@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5bHvCPNMVkNW1e71zrem1b0RSdLT+mWG9tCB/mXozZY9rWc3xzcDVvuRJctHfbhomjzO2no0hl0f1j5+kWkcLQ==",
+  "dgSpecHash": "olxuk9B49vGmxIma0SXuJAeYnNx7giUD2CjyZtNBdwNxITXOWoU402CxwKYr1Ns0pivxZWw6NR1xKO+4oDAgfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
   "expectedPackageFiles": [
@@ -133,12 +133,6 @@
     "C:\\Users\\yared\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\yared\\Documents\\education\\new\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

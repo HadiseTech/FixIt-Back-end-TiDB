@@ -20,34 +20,36 @@ using Microsoft.Extensions.Options;
 namespace Controllers
 {
 
-    [Route("api/users")]
+    [Authorize]
     [ApiController]
+    [Route("api/users")]
     public class UserController : ControllerBase
     {
         private readonly IRepository<User> _jobRepository;
         private readonly IMapper _mapper;
-        
-        private  List<User> registeredUsers; 
-         private readonly AppSettings _appSettings;
 
-        public UserController(IRepository<User> repo, IMapper mapper,IOptions<AppSettings> appSettings)
+        private List<User> registeredUsers;
+        private readonly AppSettings _appSettings;
+
+        public UserController(IRepository<User> repo, IMapper mapper, IOptions<AppSettings> appSettings)
         {
             _jobRepository = repo;
             _mapper = mapper;
             _appSettings = appSettings.Value;
 
-            
-           
+
+
         }
 
-        private async void getUsers() {
+        private async void getUsers()
+        {
             List<User> users = await _jobRepository.GetData();
-            this.registeredUsers=users;
+            this.registeredUsers = users;
             Console.WriteLine("This is the GetUsers method and this the registered users", this.registeredUsers);
-       }
+        }
 
-       
-        
+
+
         [AllowAnonymous]
         [HttpPost("authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] AuthenticateModel model)
@@ -84,18 +86,19 @@ namespace Controllers
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             // user.Token = tokenHandler.WriteToken(token);
-            UserEntity userEntity =new UserEntity();
-            userEntity.user=user;
-            userEntity.Token=tokenHandler.WriteToken(token);
+            UserEntity userEntity = new UserEntity();
+            userEntity.user = user;
+            userEntity.Token = tokenHandler.WriteToken(token);
             return Ok(userEntity);
         }
-        
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
             var model = await _jobRepository.GetData();
             return Ok(_mapper.Map<IEnumerable<UserDto>>(model));
         }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(int id)
         {
@@ -103,10 +106,11 @@ namespace Controllers
             var model = await _jobRepository.GetDataById(id);
             return Ok(_mapper.Map<UserDto>(model));
         }
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> CreateUser(UserDto userDto)
         {
-            Console.WriteLine("Creating Job");
+            Console.WriteLine("Creating Users");
             var user = _mapper.Map<User>(userDto);
             await _jobRepository.UpdateData(user);
             return Ok(userDto);
@@ -114,7 +118,7 @@ namespace Controllers
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
-        {   
+        {
             Console.WriteLine("DELETE USER");
             var model = await _jobRepository.GetDataById(id);
             var user = _mapper.Map<User>(model);

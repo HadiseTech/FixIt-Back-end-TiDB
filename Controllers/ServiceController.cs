@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Controllers
 {
 
-    // [Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/services")]
     public class ServiceController : ControllerBase
@@ -47,7 +47,7 @@ namespace Controllers
             var model = await _repo.GetDataById(id);
             return Ok(_mapper.Map<ServiceDto>(model));
         }
-        // [Authorize(Roles = RoleEntity.Admin)]
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
@@ -56,7 +56,7 @@ namespace Controllers
             await _repo.UpdateData(service);
             return Ok(serviceDto);
         }
-        // [Authorize(Roles = RoleEntity.Admin)]
+        [Authorize(Roles = RoleEntity.Admin)]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServices(int id)
         {

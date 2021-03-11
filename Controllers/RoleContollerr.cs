@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Controllers
 {
 
-    // [Authorize]
+    [Authorize(Roles = RoleEntity.Admin)]
     [ApiController]
     [Route("api/roles")]
     public class RoleController : ControllerBase
@@ -69,9 +69,9 @@ namespace Controllers
 
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoles(int id,RoleDto role)
+        public async Task<IActionResult> PutRoles(int id, RoleDto role)
         {
-           var roleModel = _mapper.Map<Role>(role);
+            var roleModel = _mapper.Map<Role>(role);
             await _repo.UpdateData(roleModel);
             return Ok(roleModel);
 

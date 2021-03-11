@@ -21,12 +21,14 @@ namespace Controllers
             _jobRepository = repo;
             _mapper = mapper;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetTechnicians()
         {
             var model = await _jobRepository.GetData();
             return Ok(_mapper.Map<IEnumerable<TechnicianDto>>(model));
         }
+
 
 
     }
