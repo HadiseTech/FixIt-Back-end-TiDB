@@ -66,17 +66,6 @@ namespace Controllers
             return Ok(_mapper.Map<ServiceDto>(service));
 
             // return Ok(serviceDto);
-
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
