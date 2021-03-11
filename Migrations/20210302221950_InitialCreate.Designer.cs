@@ -10,14 +10,14 @@ using fixit.Data;
 namespace fixit.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210301105118_InitialCreate")]
+    [Migration("20210302221950_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.8")
+                .HasAnnotation("ProductVersion", "3.1.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -157,7 +157,7 @@ namespace fixit.Migrations
                     b.Property<string>("Picture")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RoleId")
+                    b.Property<int?>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Sex")
@@ -194,9 +194,7 @@ namespace fixit.Migrations
                 {
                     b.HasOne("fixit.Models.Role", "Role")
                         .WithMany()
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RoleId");
                 });
 #pragma warning restore 612, 618
         }

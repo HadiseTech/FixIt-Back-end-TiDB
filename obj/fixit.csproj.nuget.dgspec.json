@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
+    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
+    "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "projectUniqueName": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "projectName": "fixit",
-        "projectPath": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
+        "projectPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\fixit.csproj",
         "packagesPath": "C:\\Users\\Fasikaw\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
+        "outputPath": "C:\\Users\\Fasikaw\\OneDrive\\Documents\\Fix_it_Backeckend-.Net-Web-Api-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fasikaw\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -50,19 +50,23 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.12, )"
+            },
+            "System.Data.Entity.Repository": {
+              "target": "Package",
+              "version": "[2.0.0.1, )"
             }
           },
           "imports": [

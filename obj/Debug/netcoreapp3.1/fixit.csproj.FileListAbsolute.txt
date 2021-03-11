@@ -246,3 +246,5 @@ C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\ne
 C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.csproj.CopyComplete
+C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Data.Entity.Repository.dll

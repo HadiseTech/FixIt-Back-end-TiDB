@@ -28,7 +28,7 @@ namespace fixit.Models
 
         public DateTime Dob { get; set; }
 
-        public int RoleId { get; set; }
+        public int? RoleId { get; set; }
 
         public Role Role { get; set; }
 

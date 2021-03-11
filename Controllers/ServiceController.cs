@@ -51,7 +51,7 @@ namespace Controllers
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
-
+            Console.WriteLine("Crate Service Method Invoked");
             var service = _mapper.Map<Service>(serviceDto);
             await _repo.UpdateData(service);
             return Ok(serviceDto);

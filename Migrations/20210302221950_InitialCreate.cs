@@ -52,7 +52,7 @@ namespace fixit.Migrations
                     Picture = table.Column<string>(nullable: true),
                     Sex = table.Column<string>(nullable: true),
                     Dob = table.Column<DateTime>(nullable: false),
-                    RoleId = table.Column<int>(nullable: false)
+                    RoleId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -62,7 +62,7 @@ namespace fixit.Migrations
                         column: x => x.RoleId,
                         principalTable: "Role",
                         principalColumn: "RoleId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(

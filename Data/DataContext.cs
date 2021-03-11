@@ -16,6 +16,9 @@ namespace fixit.Data
         public DbSet<Service> Service { get; set; }
         public DbSet<Technician> Technician { get; set; }
 
+
+     
+
     
     
 
