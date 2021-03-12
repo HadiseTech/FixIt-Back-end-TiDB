@@ -29,21 +29,7 @@ namespace fixit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
-
-
-            // 
-            // Use SQL Database if in Azure, otherwise, use SQLite
-            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-                services.AddDbContext<DataContext>(options =>
-                    options.UseSqlServer(
-                        Configuration.GetConnectionString("MyDbConnection")));
-            else
-                services.AddDbContext<DataContext>(options =>
-                    options.UseSqlServer(
-                        Configuration.GetConnectionString("fixItConnection")));
-            // 
-
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddCors(option =>
