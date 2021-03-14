@@ -250,9 +250,6 @@ C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\ne
 C:\Users\Fasikaw\OneDrive\Documents\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Data.Entity.Repository.dll
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\fixit.csproj.nuget.dgspec.json
-C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\project.assets.json
-C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Backup\obj\Debug\netcoreapp3.1\project.razor.json
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\templates\ff.config.json
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.exe
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\fixit.deps.json
