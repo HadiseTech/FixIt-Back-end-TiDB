@@ -313,3 +313,14 @@ C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.dll
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.pdb
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\obj\Debug\netcoreapp3.1\fixit.genruntimeconfig.cache
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\MySql.Data.EntityFrameworkCore.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll

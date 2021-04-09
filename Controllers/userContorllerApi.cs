@@ -79,7 +79,7 @@ namespace Controllers
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name,user.UserId.ToString()),
-                    new Claim(ClaimTypes.Role, user.Role.RoleName)
+                    // new Claim(ClaimTypes.Role, user.Role.RoleName)
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -91,7 +91,7 @@ namespace Controllers
             userEntity.Token = tokenHandler.WriteToken(token);
             return Ok(userEntity);
         }
-        [Authorize(Roles = RoleEntity.Admin)]
+        // [Authorize(Roles = RoleEntity.Admin)]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {

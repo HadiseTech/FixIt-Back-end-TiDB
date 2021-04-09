@@ -39,6 +39,26 @@ namespace fixit.Data
             return await _context.Service.FirstOrDefaultAsync(x => x.ServiceId == id);
         }
 
+
+        // 
+        // Get data by constraint
+        //  public async Task<Service> GetDataByConstraint(int pageNumber,string orderBy,string search)
+            // {
+                // console.WriteLine("These are the comming constrants");
+                // console.WriteLine(pageNumber);
+                // console.WriteLine(orderBy);
+                // console.WriteLine(search);
+                // if(search ==''){
+                    // There will not be search in this case
+                // }else{
+                    // There will be search call
+                    // 
+                // }
+
+                // return await _context.Service.FirstOrDefaultAsync(x => x.ServiceId == id);
+            // }
+        // 
+
         public Task<Service> PutJob(Service job)
         {
             throw new NotImplementedException();

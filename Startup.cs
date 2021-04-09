@@ -12,13 +12,16 @@ using fixit.Helpers;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-
+using MySql.Data;
+using MySql.Data.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
 // using fixit.Service;
 
 namespace fixit
 {
     public class Startup
-    {
+    {   
+             readonly string AllowedOrigin = "allowedOrigin";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,15 +32,20 @@ namespace fixit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
+            services.AddDbContext<DataContext>(opt => opt.UseMySql(Configuration.GetConnectionString("fixItConnection")));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            services.AddCors(option =>
+           services.AddCors(option =>
             {
                 option.AddPolicy("allowedOrigin",
                     builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
                     );
             });
+          
+          
+          
+          
+          
             services.AddControllers();
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -82,7 +90,7 @@ namespace fixit
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(AllowedOrigin);
             app.UseHttpsRedirection();
 
             app.UseRouting();

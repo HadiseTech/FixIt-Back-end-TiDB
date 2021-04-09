@@ -24,7 +24,7 @@ namespace fixit.Data
         async Task<List<User>> IRepository<User>.GetData()
         {
             var data = await _context.User
-            .Include(e => e.Role)
+            // .Include(e => e.Role)
              .ToListAsync();
             return data;
         }
@@ -47,6 +47,11 @@ namespace fixit.Data
             await _context.SaveChangesAsync();
             return service;
         }
+          public async Task<List<User>> GetDataByConstraint(int pageNumber,string orderBy,string search)
+  {
+  // 
+  return null;
+  }
     }
 
 }

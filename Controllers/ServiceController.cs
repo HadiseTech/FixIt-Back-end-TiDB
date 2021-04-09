@@ -41,13 +41,28 @@ namespace Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetServiceById(int id)
         {
-
-            Console.WriteLine("This is the get all service by id method");
+             Console.WriteLine("This is the comming id ");
+            Console.WriteLine(id);
+             
 
             var model = await _repo.GetDataById(id);
             return Ok(_mapper.Map<ServiceDto>(model));
         }
-        [Authorize(Roles = RoleEntity.Admin)]
+        // 
+        // Get Service with different constraints
+          [HttpGet("{pageNumber},{orderBy},{search}")]
+        public async Task<IActionResult> GetServiceByConstraint(int pageNumber,string orderBy,string search)
+        {
+             Console.WriteLine("These are the comming constriant");
+             Console.WriteLine(pageNumber);
+             Console.WriteLine(orderBy);
+             Console.WriteLine(search);
+       
+            var model = await _repo.GetDataById(pageNumber);
+             return Ok(_mapper.Map<ServiceDto>(model));
+        }
+        // 
+        // [Authorize(Roles = RoleEntity.Admin)]
         [HttpPost]
         public async Task<IActionResult> CreateService(ServiceDto serviceDto)
         {
@@ -56,7 +71,8 @@ namespace Controllers
             await _repo.UpdateData(service);
             return Ok(serviceDto);
         }
-        [Authorize(Roles = RoleEntity.Admin)]
+        
+        // [Authorize(Roles = RoleEntity.Admin)]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteServices(int id)
         {
