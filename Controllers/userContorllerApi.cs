@@ -20,7 +20,7 @@ using Microsoft.Extensions.Options;
 namespace Controllers
 {
 
-    [Authorize]
+    // [Authorize]
     [ApiController]
     [Route("api/users")]
     public class UserController : ControllerBase

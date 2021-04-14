@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-
+using System.Collections.Generic;
 using fixit.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,7 +20,7 @@ namespace fixit.Data
 
         }
 
-        public async Task<System.Collections.Generic.List<Role>> GetData()
+        public async Task<List<Role>> GetData()
         {
             var data = await _context.Role
              .ToListAsync();
@@ -46,6 +46,17 @@ namespace fixit.Data
             await _context.SaveChangesAsync();
             return role;
         }
+
+          public async Task<List<Role>> GetDataByConstraint(int pageNumber, int pageSize,string orderBy,string search)
+
+          {
+                var data = await _context.Role
+   .ToListAsync();
+  return data;
+          }
+           public async Task<int> GetTotalPage(int pageSize,string search){
+               return 0;
+           }
     }
 
 }

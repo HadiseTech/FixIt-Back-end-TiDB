@@ -48,6 +48,20 @@ namespace fixit.Data
             await _context.SaveChangesAsync();
             return job;
         }
+
+        public async Task<System.Collections.Generic.List<Job>> GetDataByConstraint(int pageNumber, int pageSize,string orderBy,string search)
+        {
+               var data = await _context.Job
+    .Include(e => e.User)
+    .Include(e => e.Technician)
+    .ToListAsync();
+   return data;
+            
+ 
+        }
+         public async Task<int> GetTotalPage(int pageSize,string search){
+             return 0;
+         }
     }
 
 }

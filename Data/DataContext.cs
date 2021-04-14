@@ -19,14 +19,7 @@ namespace fixit.Data
         public DbSet<Technician> Technician { get; set; }
 
 
-     
 
-    
-    
-
-
-    
-    
     
 
     

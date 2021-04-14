@@ -33,6 +33,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.12",
           "MySql.Data": "8.0.19",
           "MySql.Data.EntityFrameworkCore": "8.0.19",
+          "PagedList.Mvc": "3.11.0",
           "Pomelo.EntityFrameworkCore.MySql": "3.2.4",
           "System.Data.Entity.Repository": "2.0.0.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -1032,6 +1033,31 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "PagedList/1.10.0": {
+        "runtime": {
+          "lib/net40/PagedList.dll": {
+            "assemblyVersion": "1.10.0.0",
+            "fileVersion": "1.10.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/PagedList.dll": {}
+        }
+      },
+      "PagedList.Mvc/3.11.0": {
+        "dependencies": {
+          "PagedList": "1.10.0"
+        },
+        "runtime": {
+          "lib/net40/PagedList.Mvc.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/PagedList.Mvc.dll": {}
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/3.2.4": {
@@ -4159,6 +4185,20 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "PagedList/1.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NVE7dtintXliAZXQrAfoTnza//CWoEn1PNOIWDo/61aCQCBV7XMhTyVVY372iLlk0nmg1eu2UjRELUMmo1cO8g==",
+      "path": "pagedlist/1.10.0",
+      "hashPath": "pagedlist.1.10.0.nupkg.sha512"
+    },
+    "PagedList.Mvc/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zz5fB84k2xqk32xbICwELfoum9Clm70dgQEIybSksuRNf//42TsRCxkpQz5P5baZunaq7Hw+AGNbkbg7Lk46Eg==",
+      "path": "pagedlist.mvc/3.11.0",
+      "hashPath": "pagedlist.mvc.3.11.0.nupkg.sha512"
     },
     "Pomelo.EntityFrameworkCore.MySql/3.2.4": {
       "type": "package",

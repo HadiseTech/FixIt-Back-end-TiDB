@@ -26,7 +26,7 @@ namespace fixit.Models
 
         public string Sex { get; set; }
 
-        public string Dob { get; set; }
+        public DateTime Dob { get; set; }
 
         public int? RoleId { get; set; }
 

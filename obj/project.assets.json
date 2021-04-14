@@ -847,6 +847,27 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "PagedList/1.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net40/PagedList.dll": {}
+        }
+      },
+      "PagedList.Mvc/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "PagedList": "1.10.0"
+        },
+        "compile": {
+          "lib/net40/PagedList.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/PagedList.Mvc.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/3.2.4": {
         "type": "package",
         "dependencies": {
@@ -3840,6 +3861,35 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "PagedList/1.10.0": {
+      "sha512": "NVE7dtintXliAZXQrAfoTnza//CWoEn1PNOIWDo/61aCQCBV7XMhTyVVY372iLlk0nmg1eu2UjRELUMmo1cO8g==",
+      "type": "package",
+      "path": "pagedlist/1.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/PagedList.dll",
+        "lib/net40/PagedList.xml",
+        "pagedlist.1.10.0.nupkg.sha512",
+        "pagedlist.nuspec"
+      ]
+    },
+    "PagedList.Mvc/3.11.0": {
+      "sha512": "Zz5fB84k2xqk32xbICwELfoum9Clm70dgQEIybSksuRNf//42TsRCxkpQz5P5baZunaq7Hw+AGNbkbg7Lk46Eg==",
+      "type": "package",
+      "path": "pagedlist.mvc/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/PagedList.css",
+        "Content/Scripts/PagedList/PagedList.Mvc.Template.html",
+        "Content/Scripts/PagedList/PagedList.Mvc.js",
+        "lib/net40/PagedList.Mvc.XML",
+        "lib/net40/PagedList.Mvc.dll",
+        "pagedlist.mvc.3.11.0.nupkg.sha512",
+        "pagedlist.mvc.nuspec"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/3.2.4": {
@@ -8637,6 +8687,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.12",
       "MySql.Data >= 8.0.19",
       "MySql.Data.EntityFrameworkCore >= 8.0.19",
+      "PagedList.Mvc >= 3.11.0",
       "Pomelo.EntityFrameworkCore.MySql >= 3.2.4",
       "System.Data.Entity.Repository >= 2.0.0.1"
     ]
@@ -8714,6 +8765,10 @@
             "target": "Package",
             "version": "[8.0.19, )"
           },
+          "PagedList.Mvc": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[3.2.4, )"
@@ -8733,6 +8788,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.13, 3.1.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8752,6 +8813,26 @@
       "warningLevel": 1,
       "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.10.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList.Mvc 3.11.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList.Mvc",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

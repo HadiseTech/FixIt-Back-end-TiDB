@@ -47,11 +47,18 @@ namespace fixit.Data
             await _context.SaveChangesAsync();
             return service;
         }
-          public async Task<List<User>> GetDataByConstraint(int pageNumber,string orderBy,string search)
+         public async Task<List<User>> GetDataByConstraint(int pageNumber, int pageSize,string orderBy,string search)
   {
-  // 
-  return null;
+  
+   var data = await _context.User
+ // .Include(e => e.Role)
+  .ToListAsync();
+ return data;
   }
+
+   public async Task<int> GetTotalPage(int pageSize,string search){
+       return 0;
+   }
     }
 
 }

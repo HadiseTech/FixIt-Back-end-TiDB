@@ -32,7 +32,7 @@ namespace fixit
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(opt => opt.UseMySql(Configuration.GetConnectionString("fixItConnection")));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("fixItConnection")));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
            services.AddCors(option =>

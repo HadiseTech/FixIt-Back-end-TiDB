@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Controllers
 {
 
-    [Authorize]
+    // [Authorize]
     [ApiController]
     [Route("api/services")]
     public class ServiceController : ControllerBase
@@ -50,16 +50,25 @@ namespace Controllers
         }
         // 
         // Get Service with different constraints
-          [HttpGet("{pageNumber},{orderBy},{search}")]
-        public async Task<IActionResult> GetServiceByConstraint(int pageNumber,string orderBy,string search)
-        {
+          [HttpGet("{pageNumber},{pageSize},{orderBy},{search}")]
+        public async Task<IActionResult> GetServiceByConstraint(int pageNumber,int pageSize, string orderBy,string search)
+        {   
+            // ServiceRepository _service= new ServiceRepository();
              Console.WriteLine("These are the comming constriant");
              Console.WriteLine(pageNumber);
              Console.WriteLine(orderBy);
              Console.WriteLine(search);
        
-            var model = await _repo.GetDataById(pageNumber);
-             return Ok(_mapper.Map<ServiceDto>(model));
+           var model = await _repo.GetDataByConstraint(pageNumber,pageSize,orderBy,search);
+
+        var totalPage= await _repo.GetTotalPage(pageSize,search);
+        ServiceData service= new ServiceData(totalPage,model);
+             
+             
+    // var totalRecords = await context.Customers.CountAsync();
+    // return Ok(new PagedResponse<List<Customer>>(pagedData, validFilter.PageNumber, validFilter.PageSize));
+            //  return Ok(_mapper.Map<ServiceDto>(model));
+             return Ok(service);
         }
         // 
         // [Authorize(Roles = RoleEntity.Admin)]

@@ -324,3 +324,5 @@ C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\PagedList.dll
+C:\Users\yared\Documents\education\new\Fix_it_Backeckend-.Net-Web-Api-\bin\Debug\netcoreapp3.1\PagedList.Mvc.dll

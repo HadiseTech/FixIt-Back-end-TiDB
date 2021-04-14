@@ -1,4 +1,4 @@
-
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,6 +11,7 @@ namespace fixit.Data
     public class ServiceRepository : IRepository<Service>
     {
         private readonly DataContext _context;
+        
         public ServiceRepository(DataContext context)
         {
             _context = context;
@@ -42,22 +43,107 @@ namespace fixit.Data
 
         // 
         // Get data by constraint
-        //  public async Task<Service> GetDataByConstraint(int pageNumber,string orderBy,string search)
-            // {
-                // console.WriteLine("These are the comming constrants");
-                // console.WriteLine(pageNumber);
-                // console.WriteLine(orderBy);
-                // console.WriteLine(search);
-                // if(search ==''){
-                    // There will not be search in this case
-                // }else{
-                    // There will be search call
-                    // 
-                // }
+         public async Task<List<Service>> GetDataByConstraint(int pageNumber, int pageSize,string orderBy,string search)
+            {
+                // search="hello";
+                
+                
 
-                // return await _context.Service.FirstOrDefaultAsync(x => x.ServiceId == id);
-            // }
-        // 
+        switch (orderBy)
+                     {
+                        case "Category":
+                                if(search=="0"){
+                                   return await _context.Service
+                                    .OrderBy(s=>s.Category)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                     
+                                }else{
+                                     return await _context.Service
+                                    .Where(b => b.ServiceName ==  search)
+                                    .OrderBy(s=>s.Category)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                                 }
+                            // model=model.orderBy(s=>s.Category).ToListAsync();
+                                break;
+                    case "ServiceName":
+                            if(search=="0"){
+                                return await _context.Service
+                                    .OrderBy(s=>s.ServiceName)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                            }else{
+                                return await _context.Service
+                                        .Where(b => b.ServiceName ==  search)
+                                        .OrderBy(s=>s.ServiceName)
+                                        .Skip((pageNumber - 1) * pageSize)
+                                        .Take(pageSize)
+                                        .ToListAsync();
+                            }
+                            // model=model.orderBy(s=>s.ServiceName).ToListAsync();
+                            break;
+                    case "InitialPrice":
+                            if(search=="0"){
+                                return await _context.Service
+                                    .OrderBy(s=>s.InitialPrice)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                            }else{
+                                return await _context.Service
+                                    .Where(b => b.ServiceName ==  search)
+                                    .OrderBy(s=>s.InitialPrice)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                            }
+                            // model=model.orderBy(s=>s.InitialPrice).ToListAsync();
+                            break;
+                         default:
+                            if(search=="0"){
+                                return await _context.Service
+                                    .OrderBy(s=>s.ServiceName)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                            }else{
+                                return await _context.Service
+                                    .Where(b => b.ServiceName ==  search)
+                                    .OrderBy(s=>s.ServiceName)
+                                    .Skip((pageNumber - 1) * pageSize)
+                                    .Take(pageSize)
+                                    .ToListAsync();
+                            }
+                            // model=model.orderBy(s=>s.ServiceName).ToListAsync();
+                             break;
+
+                     }
+
+                    
+        }
+        public async Task<int> GetTotalPage(int pageSize,string search){
+            if(search!="0"){
+                // 
+                   var count = await _context.Service.Where(b => b.ServiceName ==  search).CountAsync();
+                   var totalPages = (int)Math.Ceiling(count / (float)pageSize);
+                    return totalPages;
+
+            }else{
+                // 
+                var count = await _context.Service.CountAsync();
+                var totalPages = (int)Math.Ceiling(count / (float)pageSize);
+                return totalPages;
+            }
+             
+             
+
+             
+        }
+        
 
         public Task<Service> PutJob(Service job)
         {
